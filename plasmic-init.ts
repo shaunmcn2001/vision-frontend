@@ -1,5 +1,6 @@
 import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
 
+
 export const PLASMIC = initPlasmicLoader({
   projects: [
     {
@@ -20,6 +21,9 @@ export const PLASMIC = initPlasmicLoader({
 // And configure your Plasmic project to use the host url pointing at
 // the /plasmic-host page of your nextjs app (for example,
 // http://localhost:3000/plasmic-host).  See
-// https://docs.plasmic.app/learn/app-hosting/#set-a-plasmic-project-to-use-your-app-host
+// https://docs.plasmic.app/learn/app-hosting/#set-a-plasmic-project-to-use-your-app-hos
+// 
 
-// PLASMIC.registerComponent(...);
+
+const { registerSearchMap } = require("./components/registerSearchMap");
+registerSearchMap();
